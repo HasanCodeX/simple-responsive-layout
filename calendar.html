@@ -3,69 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Professional Calendar</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
         .calendar {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            gap: 10px; 
+            gap: 8px;
             padding: 20px;
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            max-width: 600px;
-            margin: 20px auto;
-            border-radius: 8px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
         }
+
         .date {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #eaeaea;
-            height: 50px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1.2em;
+            background: #f0f0f0;
+            height: 70px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            transition: transform 0.2s, background 0.2s;
+            width: 70px;
+        }
+
+        .date:hover {
+            background: #4ca1af;
+            color: #fff;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            margin-bottom: 10px;
+            text-align: center;
             font-weight: bold;
+            color: #4ca1af;
+            font-size: 1.1rem;
         }
     </style>
 </head>
 <body>
-    <div class="calendar">
-        <div class="date">1</div>
-        <div class="date">2</div>
-        <div class="date">3</div>
-        <div class="date">4</div>
-        <div class="date">5</div>
-        <div class="date">6</div>
-        <div class="date">7</div>
-        <div class="date">8</div>
-        <div class="date">9</div>
-        <div class="date">10</div>
-        <div class="date">11</div>
-        <div class="date">12</div>
-        <div class="date">13</div>
-        <div class="date">14</div>
-        <div class="date">15</div>
-        <div class="date">16</div>
-        <div class="date">17</div>
-        <div class="date">18</div>
-        <div class="date">19</div>
-        <div class="date">20</div>
-        <div class="date">21</div>
-        <div class="date">22</div>
-        <div class="date">23</div>
-        <div class="date">24</div>
-        <div class="date">25</div>
-        <div class="date">26</div>
-        <div class="date">27</div>
-        <div class="date">28</div>
-        <div class="date">29</div>
-        <div class="date">30</div>
-        <div class="date">31</div>
-        <div class="date">32</div>
-        <div class="date">33</div>
-        <div class="date">34</div>
-        <div class="date">35</div>
+    <div>
+        <div class="header">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+        <div class="calendar">
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+        </div>
     </div>
 </body>
 </html>
